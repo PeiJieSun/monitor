@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .centered-container {
+            position: relative;
+        }
+
+        .centered-container .btn {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        #inputField {
+            margin-left: auto;
+        }
+
+        .centered-container {
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .centered-container .btn {
+            background-color: #337ab7;
+            border: none;
+            color: white;
+            font-size: 20px;
+            height: 50px;
+            line-height: 50px;
+            padding: 10px 20px;
+            width: calc(50% - 10px);
+        }
+
+        #inputField {
+            background-color: transparent;
+            border: none;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+            height: 50px;
+            overflow: hidden;
+            outline: none;
+            padding: 10px;
+            resize: none;
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            #inputField {
+                height: auto;
+            }
+        }
+
+        #output {
+            background-color: lightgrey;
+            border: none;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+            height: 100px;
+            overflow: hidden;
+            padding: 10px;
+            resize: none;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="centered-container">
+        <button class="btn">Button 1</button>
+        <button class="btn">Button 2</button>
+        <input type="text" id="inputField">
+        <output id="output"></output>
+    </div>
+</body>
+</html>
